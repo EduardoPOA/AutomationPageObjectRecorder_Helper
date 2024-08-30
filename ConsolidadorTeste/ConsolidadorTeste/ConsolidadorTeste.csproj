@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+    <PackageReference Include="NUnit" Version="*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="*" />
+    <PackageReference Include="ExtentReports" Version="*" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="Specflow" Version="*" />
+    <PackageReference Include="SpecFlow.NUnit" Version="*" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="*" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="*" />
+    <PackageReference Include="Super_Automation" Version="58.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Projeto_Pages\" />
+    <Folder Include="Projeto_Locators\" />
+    <Folder Include="Projeto_Report\" />
+    <Folder Include="Projeto_Resources\" />
+    <Folder Include="Projeto_Features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Projeto_Locators\PageObjects.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

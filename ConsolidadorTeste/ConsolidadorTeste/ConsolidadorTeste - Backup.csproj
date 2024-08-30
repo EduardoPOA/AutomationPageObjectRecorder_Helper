@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="insiraNomeDoFolder_Features\**" />
+    <Compile Remove="insiraNomeDoFolder_Locators\**" />
+    <Compile Remove="insiraNomeDoFolder_Pages\**" />
+    <Compile Remove="insiraNomeDoFolder_Report\**" />
+    <Compile Remove="insiraNomeDoFolder_Resources\**" />
+    <Compile Remove="insiraNomeDoFolder_Steps\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Features\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Locators\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Pages\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Report\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Resources\**" />
+    <EmbeddedResource Remove="insiraNomeDoFolder_Steps\**" />
+    <None Remove="insiraNomeDoFolder_Features\**" />
+    <None Remove="insiraNomeDoFolder_Locators\**" />
+    <None Remove="insiraNomeDoFolder_Pages\**" />
+    <None Remove="insiraNomeDoFolder_Report\**" />
+    <None Remove="insiraNomeDoFolder_Resources\**" />
+    <None Remove="insiraNomeDoFolder_Steps\**" />
+    <PackageReference Include="NUnit" Version="*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="*" />
+    <PackageReference Include="ExtentReports" Version="*" />
+    <PackageReference Include="MSTest.TestAdapter" Version="*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="*" />
+    <PackageReference Include="Specflow" Version="*" />
+    <PackageReference Include="SpecFlow.NUnit" Version="*" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="*" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="*" />
+    <PackageReference Include="Super_Automation" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActDigital_Pages\" />
+    <Folder Include="ActDigital_Locators\" />
+    <Folder Include="ActDigital_Report\" />
+    <Folder Include="ActDigital_Resources\" />
+    <Folder Include="ActDigital_Features\" />
+    <Folder Include="ActDigital_Steps\" />
+  </ItemGroup>
+</Project>
